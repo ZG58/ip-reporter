@@ -24,19 +24,26 @@ IP Reporter 是一款监测电脑上 IP 地址变动的小工具，一旦电脑�
 
 ### 环境配置
 
-1. 安装 Python 环境(Python3.5.x，Python3.6.x 测试通过)
+1. 安装 Python 环境(Python3.5.x，Python3.6.x, python3.9.x测试通过)
 
-2. 将 python 目录和 python/Scripts 目录加入**系统环境变量** `PATH` 中（加入用户环境变量不行！）
+2. 将 python 目录(例如:`D:\ProgramData\miniconda3\envs\ipreporter`)和 python/Scripts (例如:`D:\ProgramData\miniconda3\envs\ipreporter\Scripts`)目录加入**系统环境变量** `PATH` 中（加入用户环境变量不行！）
 
-3. 安装 Python 的第三方库 `pypiwin32`，命令为 `pip install pypiwin32`
+3. 安装 Python 的第三方库 `pypiwin32`或者 `pywin32`，命令为 `pip install pypiwin32`或者 `pip install pywin32`
 
-4. 将 `python\Lib\site-packages\win32` 和 `python\Lib\site-packages\pywin32_system32` 目录也加入**系统环境变量** `PATH` 中。参见：[Can't start Windows service written in Python (win32serviceutil)](https://stackoverflow.com/questions/8943371/cant-start-windows-service-written-in-python-win32serviceutil)
+4. 将 `python\Lib\site-packages\win32` (例如:`D:\ProgramData\miniconda3\envs\ipreporter\Lib\site-packages\win32`)和 `python\Lib\site-packages\pywin32_system32` (例如:`D:\ProgramData\miniconda3\envs\ipreporter\Lib\site-packages\pywin32_system32`)目录也加入**系统环境变量** `PATH` 中。参见：[Can't start Windows service written in Python (win32serviceutil)](https://stackoverflow.com/questions/8943371/cant-start-windows-service-written-in-python-win32serviceutil)
 
 5. 设置发件箱和收件箱：在**系统环境变量**中添加条目 `ipreporter`（注意：不是在 `PATH` 变量内，而是与其并列），其值为 `发件箱,发件箱SMTP服务器,发件箱密码,收件箱1,收件箱2,...`，如：`officePC@163.com,smtp.163.com,654321,Tom@163.com,Tom@qq.com`
 
-> **注意：所使用的发件箱必须先开通 SMTP 服务！**
+> **注意：**
+> 
+> **1. 所使用的发件箱必须先开通 SMTP 服务！** 
+> 
+>    主流的邮件服务商如：163、新浪、qq 等均默认**不开通** SMTP 服务！
+> 
+> **2. 如果出现smtplib.SMTPAuthenticationError: (535, b'Error: authentication failed')**
+>    
+>    将登录密码改为授权码（是用于登录第三方邮件客户端的专用密码）
 >
-> 主流的邮件服务商如：163、新浪、qq 等均默认**不开通** SMTP 服务！
 
 ### 使用
 

@@ -62,3 +62,5 @@ smtplib.SMTPAuthenticationError: (535, b'Error: authentication failed')
 
 [2024-07-19 10:42:41,663] IpReporter INFO: *** ip_reporter started ***
 [2024-07-19 10:42:41,669] IpReporter INFO: IP address changed from None to 2408:8210:2432:4ce0:fdd5:53cc:447:818c.
+[2024-07-19 10:49:30,044] IpReporter INFO: *** ip_reporter closed ***
+
