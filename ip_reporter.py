@@ -57,10 +57,11 @@ class IpReporter(object):
         """get the external network IP address, by which we can access this computer from remote"""
         all_ips = self._get_all_ips()
         # filter off ipv6, intranet IP address and reserved IP address
-        filt = lambda s: (':' not in s) \
-            and (not s.startswith('192.168.')) \
-            and (not s.startswith('169.254.'))
-        outer_ips = [ip for ip in all_ips if filt(ip)]
+        # filt = lambda s: (':' not in s) \
+        #     and (not s.startswith('192.168.')) \
+        #     and (not s.startswith('169.254.'))
+        # outer_ips = [ip for ip in all_ips if filt(ip)]
+        outer_ips = [all_ips[2]]
         if not outer_ips:
             self.logger.error('*** Error: Failed to get outer IP address ***')
             return

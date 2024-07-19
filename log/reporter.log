@@ -1,0 +1,62 @@
+[2024-07-19 09:50:29,932] IpReporter INFO: *** ip_reporter started ***
+[2024-07-19 09:50:29,936] IpReporter ERROR: *** Error: Failed to get outer IP address ***
+[2024-07-19 09:50:29,936] IpReporter INFO: IP address (None) remains unchanged.
+[2024-07-19 09:53:56,385] IpReporter INFO: *** ip_reporter started ***
+[2024-07-19 09:53:56,389] IpReporter ERROR: *** Error: Failed to get outer IP address ***
+[2024-07-19 09:53:56,389] IpReporter INFO: IP address (None) remains unchanged.
+[2024-07-19 10:01:50,421] IpReporter INFO: *** ip_reporter started ***
+[2024-07-19 10:15:26,136] IpReporter INFO: *** ip_reporter closed ***
+
+[2024-07-19 10:15:29,978] IpReporter INFO: *** ip_reporter started ***
+[2024-07-19 10:18:55,658] IpReporter INFO: *** ip_reporter closed ***
+
+[2024-07-19 10:20:15,358] IpReporter INFO: *** ip_reporter started ***
+[2024-07-19 10:20:54,879] IpReporter WARNING: *** Error: Too many outer IP addresses: 2408:8210:2432:4ce0:fdd5:53cc:447:818c ***
+[2024-07-19 10:21:38,315] IpReporter INFO: *** ip_reporter closed ***
+
+[2024-07-19 10:21:41,150] IpReporter INFO: *** ip_reporter started ***
+[2024-07-19 10:22:09,528] IpReporter INFO: IP address changed from None to 2408:8210:2432:4ce0:fdd5:53cc:447:818c.
+[2024-07-19 10:23:23,887] IpReporter ERROR: (535, b'Error: authentication failed')
+Traceback (most recent call last):
+  File "E:\PythonProjects\ip-reporter\ip_reporter.py", line 100, in <module>
+    reporter.loop()
+  File "E:\PythonProjects\ip-reporter\ip_reporter.py", line 91, in loop
+    self._handle_ip_change()
+  File "E:\PythonProjects\ip-reporter\ip_reporter.py", line 83, in _handle_ip_change
+    self.sender.send_email(msg)
+  File "E:\PythonProjects\ip-reporter\email_util.py", line 65, in send_email
+    self._send_email(self.make_email(msg_str))
+  File "E:\PythonProjects\ip-reporter\email_util.py", line 57, in _send_email
+    server.login(self.from_email, self.password)
+  File "D:\ProgramData\miniconda3\envs\ipreporter\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "D:\ProgramData\miniconda3\envs\ipreporter\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "D:\ProgramData\miniconda3\envs\ipreporter\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Error: authentication failed')
+[2024-07-19 10:23:24,681] IpReporter INFO: *** ip_reporter closed ***
+
+[2024-07-19 10:40:25,884] IpReporter INFO: *** ip_reporter started ***
+[2024-07-19 10:40:25,890] IpReporter INFO: IP address changed from None to 2408:8210:2432:4ce0:fdd5:53cc:447:818c.
+[2024-07-19 10:40:26,381] IpReporter ERROR: (535, b'Error: authentication failed')
+Traceback (most recent call last):
+  File "E:\PythonProjects\ip-reporter\ip_reporter.py", line 100, in <module>
+    reporter.loop()
+  File "E:\PythonProjects\ip-reporter\ip_reporter.py", line 91, in loop
+    self._handle_ip_change()
+  File "E:\PythonProjects\ip-reporter\ip_reporter.py", line 83, in _handle_ip_change
+    self.sender.send_email(msg)
+  File "E:\PythonProjects\ip-reporter\email_util.py", line 65, in send_email
+    self._send_email(self.make_email(msg_str))
+  File "E:\PythonProjects\ip-reporter\email_util.py", line 57, in _send_email
+    server.login(self.from_email, self.password)
+  File "D:\ProgramData\miniconda3\envs\ipreporter\lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "D:\ProgramData\miniconda3\envs\ipreporter\lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "D:\ProgramData\miniconda3\envs\ipreporter\lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'Error: authentication failed')
+[2024-07-19 10:40:26,382] IpReporter INFO: *** ip_reporter closed ***
+
