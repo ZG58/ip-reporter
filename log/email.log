@@ -68,3 +68,60 @@
 [2024-07-19 10:40:26,381] DEBUG: reply:
 [2024-07-19 10:40:26,381] DEBUG: b'535 Error: authentication failed\r\n'
 [2024-07-19 10:40:26,381] DEBUG: reply: retcode (535); Msg: b'Error: authentication failed'
+[2024-07-19 10:42:41,670] INFO: ========================= email begin =========================
+[2024-07-19 10:42:41,784] DEBUG: send:
+[2024-07-19 10:42:41,784] DEBUG: 'ehlo [192.168.18.7]\r\n'
+[2024-07-19 10:42:41,835] DEBUG: reply:
+[2024-07-19 10:42:41,835] DEBUG: b'250-mail\r\n'
+[2024-07-19 10:42:41,835] DEBUG: reply:
+[2024-07-19 10:42:41,835] DEBUG: b'250-PIPELINING\r\n'
+[2024-07-19 10:42:41,835] DEBUG: reply:
+[2024-07-19 10:42:41,835] DEBUG: b'250-AUTH LOGIN PLAIN XOAUTH2\r\n'
+[2024-07-19 10:42:41,835] DEBUG: reply:
+[2024-07-19 10:42:41,836] DEBUG: b'250-AUTH=LOGIN PLAIN XOAUTH2\r\n'
+[2024-07-19 10:42:41,836] DEBUG: reply:
+[2024-07-19 10:42:41,836] DEBUG: b'250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UruWNOYUCa0xDrUUUUj\r\n'
+[2024-07-19 10:42:41,836] DEBUG: reply:
+[2024-07-19 10:42:41,836] DEBUG: b'250-STARTTLS\r\n'
+[2024-07-19 10:42:41,836] DEBUG: reply:
+[2024-07-19 10:42:41,836] DEBUG: b'250-ID\r\n'
+[2024-07-19 10:42:41,836] DEBUG: reply:
+[2024-07-19 10:42:41,836] DEBUG: b'250 8BITMIME\r\n'
+[2024-07-19 10:42:41,836] DEBUG: reply: retcode (250); Msg: b'mail\nPIPELINING\nAUTH LOGIN PLAIN XOAUTH2\nAUTH=LOGIN PLAIN XOAUTH2\ncoremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UruWNOYUCa0xDrUUUUj\nSTARTTLS\nID\n8BITMIME'
+[2024-07-19 10:42:41,836] DEBUG: send:
+[2024-07-19 10:42:41,836] DEBUG: 'AUTH PLAIN AHdhbmdtZW5na2U5N0AxNjMuY29tAEJQWEtZQ09XQ0VSVEJTQ1E=\r\n'
+[2024-07-19 10:42:41,945] DEBUG: reply:
+[2024-07-19 10:42:41,945] DEBUG: b'235 Authentication successful\r\n'
+[2024-07-19 10:42:41,945] DEBUG: reply: retcode (235); Msg: b'Authentication successful'
+[2024-07-19 10:42:41,945] DEBUG: send:
+[2024-07-19 10:42:41,945] DEBUG: 'mail FROM:<wangmengke97@163.com>\r\n'
+[2024-07-19 10:42:41,997] DEBUG: reply:
+[2024-07-19 10:42:41,997] DEBUG: b'250 Mail OK\r\n'
+[2024-07-19 10:42:41,997] DEBUG: reply: retcode (250); Msg: b'Mail OK'
+[2024-07-19 10:42:41,997] DEBUG: send:
+[2024-07-19 10:42:41,997] DEBUG: 'rcpt TO:<wangzhenguang98@163.com>\r\n'
+[2024-07-19 10:42:42,049] DEBUG: reply:
+[2024-07-19 10:42:42,049] DEBUG: b'250 Mail OK\r\n'
+[2024-07-19 10:42:42,049] DEBUG: reply: retcode (250); Msg: b'Mail OK'
+[2024-07-19 10:42:42,049] DEBUG: send:
+[2024-07-19 10:42:42,049] DEBUG: 'data\r\n'
+[2024-07-19 10:42:42,100] DEBUG: reply:
+[2024-07-19 10:42:42,100] DEBUG: b'354 End data with <CR><LF>.<CR><LF>\r\n'
+[2024-07-19 10:42:42,100] DEBUG: reply: retcode (354); Msg: b'End data with <CR><LF>.<CR><LF>'
+[2024-07-19 10:42:42,100] DEBUG: data:
+[2024-07-19 10:42:42,101] DEBUG: (354, b'End data with <CR><LF>.<CR><LF>')
+[2024-07-19 10:42:42,101] DEBUG: send:
+[2024-07-19 10:42:42,101] DEBUG: b'Content-Type: text/plain; charset="utf-8"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: base64\r\nFrom: =?utf-8?q?IP_Reporter?= <wangmengke97@163.com>\r\nTo: wangzhenguang98@163.com\r\nSubject: =?utf-8?q?Remote_IP_Address_has_Changed?=\r\n\r\nSG9zdG5hbWXvvJpERVNLVE9QLUFLSTNMU0EKT2xkIElQ77yaTm9uZQpOZXcgSVDvvJoyNDA4Ojgy\r\nMTA6MjQzMjo0Y2UwOmZkZDU6NTNjYzo0NDc6ODE4YwpPY2N1ciBhdO+8mjIwMjQtMDctMTkgMTA6\r\nNDI6NDE=\r\n.\r\n'
+[2024-07-19 10:42:42,161] DEBUG: reply:
+[2024-07-19 10:42:42,162] DEBUG: b'250 Mail OK queued as gzga-smtp-mta-g1-5,_____wD3H6Og0plmNr75Bg--.49470S2 1721356960\r\n'
+[2024-07-19 10:42:42,162] DEBUG: reply: retcode (250); Msg: b'Mail OK queued as gzga-smtp-mta-g1-5,_____wD3H6Og0plmNr75Bg--.49470S2 1721356960'
+[2024-07-19 10:42:42,162] DEBUG: data:
+[2024-07-19 10:42:42,162] DEBUG: (250, b'Mail OK queued as gzga-smtp-mta-g1-5,_____wD3H6Og0plmNr75Bg--.49470S2 1721356960')
+[2024-07-19 10:42:42,162] DEBUG: send:
+[2024-07-19 10:42:42,162] DEBUG: 'quit\r\n'
+[2024-07-19 10:42:42,214] DEBUG: reply:
+[2024-07-19 10:42:42,214] DEBUG: b'221 Bye\r\n'
+[2024-07-19 10:42:42,215] DEBUG: reply: retcode (221); Msg: b'Bye'
+[2024-07-19 10:42:42,215] INFO: ========================= email over =========================
+
+
