@@ -61,7 +61,7 @@ class IpReporter(object):
         #     and (not s.startswith('192.168.')) \
         #     and (not s.startswith('169.254.'))
         # outer_ips = [ip for ip in all_ips if filt(ip)]
-        outer_ips = [all_ips[2]]
+        outer_ips = [all_ips[1]]
         if not outer_ips:
             self.logger.error('*** Error: Failed to get outer IP address ***')
             return

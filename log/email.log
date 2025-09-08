@@ -125,3 +125,58 @@
 [2024-07-19 10:42:42,215] INFO: ========================= email over =========================
 
 
+[2025-09-08 22:25:36,457] INFO: ========================= email begin =========================
+[2025-09-08 22:25:37,225] DEBUG: send:
+[2025-09-08 22:25:37,225] DEBUG: 'ehlo [10.4.8.254]\r\n'
+[2025-09-08 22:25:37,249] DEBUG: reply:
+[2025-09-08 22:25:37,249] DEBUG: b'250-mail\r\n'
+[2025-09-08 22:25:37,306] DEBUG: reply:
+[2025-09-08 22:25:37,306] DEBUG: b'250-AUTH LOGIN PLAIN XOAUTH2\r\n'
+[2025-09-08 22:25:37,306] DEBUG: reply:
+[2025-09-08 22:25:37,306] DEBUG: b'250-AUTH=LOGIN PLAIN XOAUTH2\r\n'
+[2025-09-08 22:25:37,306] DEBUG: reply:
+[2025-09-08 22:25:37,306] DEBUG: b'250-coremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFLsKyTUCa0xDrUUUUj\r\n'
+[2025-09-08 22:25:37,307] DEBUG: reply:
+[2025-09-08 22:25:37,307] DEBUG: b'250-STARTTLS\r\n'
+[2025-09-08 22:25:37,307] DEBUG: reply:
+[2025-09-08 22:25:37,307] DEBUG: b'250-ID\r\n'
+[2025-09-08 22:25:37,307] DEBUG: reply:
+[2025-09-08 22:25:37,307] DEBUG: b'250 8BITMIME\r\n'
+[2025-09-08 22:25:37,307] DEBUG: reply: retcode (250); Msg: b'mail\nAUTH LOGIN PLAIN XOAUTH2\nAUTH=LOGIN PLAIN XOAUTH2\ncoremail 1Uxr2xKj7kG0xkI17xGrU7I0s8FY2U3Uj8Cz28x1UUUUU7Ic2I0Y2UFLsKyTUCa0xDrUUUUj\nSTARTTLS\nID\n8BITMIME'
+[2025-09-08 22:25:37,308] DEBUG: send:
+[2025-09-08 22:25:37,308] DEBUG: 'AUTH PLAIN AHdhbmdtZW5na2U5N0AxNjMuY29tAFBQdjQ5M2JHTlkycWNRMnM=\r\n'
+[2025-09-08 22:25:37,447] DEBUG: reply:
+[2025-09-08 22:25:37,447] DEBUG: b'235 Authentication successful\r\n'
+[2025-09-08 22:25:37,448] DEBUG: reply: retcode (235); Msg: b'Authentication successful'
+[2025-09-08 22:25:37,449] DEBUG: send:
+[2025-09-08 22:25:37,450] DEBUG: 'mail FROM:<wangmengke97@163.com>\r\n'
+[2025-09-08 22:25:37,476] DEBUG: reply:
+[2025-09-08 22:25:37,477] DEBUG: b'250 Mail OK\r\n'
+[2025-09-08 22:25:37,477] DEBUG: reply: retcode (250); Msg: b'Mail OK'
+[2025-09-08 22:25:37,477] DEBUG: send:
+[2025-09-08 22:25:37,477] DEBUG: 'rcpt TO:<wangzhenguang98@163.com>\r\n'
+[2025-09-08 22:25:37,505] DEBUG: reply:
+[2025-09-08 22:25:37,505] DEBUG: b'250 Mail OK\r\n'
+[2025-09-08 22:25:37,505] DEBUG: reply: retcode (250); Msg: b'Mail OK'
+[2025-09-08 22:25:37,505] DEBUG: send:
+[2025-09-08 22:25:37,506] DEBUG: 'data\r\n'
+[2025-09-08 22:25:37,530] DEBUG: reply:
+[2025-09-08 22:25:37,530] DEBUG: b'354 End data with <CR><LF>.<CR><LF>\r\n'
+[2025-09-08 22:25:37,530] DEBUG: reply: retcode (354); Msg: b'End data with <CR><LF>.<CR><LF>'
+[2025-09-08 22:25:37,530] DEBUG: data:
+[2025-09-08 22:25:37,531] DEBUG: (354, b'End data with <CR><LF>.<CR><LF>')
+[2025-09-08 22:25:37,531] DEBUG: send:
+[2025-09-08 22:25:37,532] DEBUG: b'Content-Type: text/plain; charset="utf-8"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: base64\r\nFrom: =?utf-8?q?IP_Reporter?= <wangmengke97@163.com>\r\nTo: wangzhenguang98@163.com\r\nSubject: =?utf-8?q?Remote_IP_Address_has_Changed?=\r\n\r\nSG9zdG5hbWXvvJpERVNLVE9QLVNDNkQzQTIKT2xkIElQ77yaMjQwODo4MjEwOjI0MzI6NGNlMDpm\r\nZGQ1OjUzY2M6NDQ3OjgxOGMKTmV3IElQ77yaMTAuNC44LjI1NApPY2N1ciBhdO+8mjIwMjUtMDkt\r\nMDggMjI6MjU6MzY=\r\n.\r\n'
+[2025-09-08 22:25:37,598] DEBUG: reply:
+[2025-09-08 22:25:37,598] DEBUG: b'250 Mail OK queued as gzga-smtp-mtada-g1-1,_____wCXeaVh575oYaqfGw--.32379S2 1757341538\r\n'
+[2025-09-08 22:25:37,598] DEBUG: reply: retcode (250); Msg: b'Mail OK queued as gzga-smtp-mtada-g1-1,_____wCXeaVh575oYaqfGw--.32379S2 1757341538'
+[2025-09-08 22:25:37,598] DEBUG: data:
+[2025-09-08 22:25:37,598] DEBUG: (250, b'Mail OK queued as gzga-smtp-mtada-g1-1,_____wCXeaVh575oYaqfGw--.32379S2 1757341538')
+[2025-09-08 22:25:37,598] DEBUG: send:
+[2025-09-08 22:25:37,598] DEBUG: 'quit\r\n'
+[2025-09-08 22:25:37,625] DEBUG: reply:
+[2025-09-08 22:25:37,625] DEBUG: b'221 Bye\r\n'
+[2025-09-08 22:25:37,625] DEBUG: reply: retcode (221); Msg: b'Bye'
+[2025-09-08 22:25:37,625] INFO: ========================= email over =========================
+
+

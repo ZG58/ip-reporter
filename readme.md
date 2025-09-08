@@ -34,6 +34,10 @@ IP Reporter 是一款监测电脑上 IP 地址变动的小工具，一旦电脑�
 
 5. 设置发件箱和收件箱：在**系统环境变量**中添加条目 `ipreporter`（注意：不是在 `PATH` 变量内，而是与其并列），其值为 `发件箱,发件箱SMTP服务器,发件箱密码,收件箱1,收件箱2,...`，如：`officePC@163.com,smtp.163.com,654321,Tom@163.com,Tom@qq.com`
 
+6. 变量名：ipreporter 变量值：xxxx@163.com,smtp.163.com,xxxxx,xxxxxx@163.com
+
+7. 环境变量设置完毕，需要重启IDE，读取环境变量
+
 > **注意：**
 > 
 > **1. 所使用的发件箱必须先开通 SMTP 服务！** 
